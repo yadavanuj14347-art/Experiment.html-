@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 30px;
+            background-color: white;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table, th, td {
+            border: 2px solid black;
+        }
+
+        th, td {
+            padding: 10px 5px;
+        }
+
+        th {
+            background-color: #e6e6e6;
+        }
+
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px;
+            color: darkblue;
+        }
+
+        .break {
+            background-color: #fff2cc;
+            font-weight: bold;
+        }
+
+        .lab {
+            background-color: #e2f0d9;
+        }
+
+        .nested {
+            width: 100%;
+            margin-top: 5px;
+            font-size: 13px;
+        }
+
+        .nested th {
+            background-color: #d9eaf7;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>College Timetable - CSE Department</h2>
+
+    <table>
+        <caption>Weekly Class Timetable</caption>
+
+        <tr>
+            <th>Day / Time</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+            <th>12:00 - 1:00</th>
+            <th>1:00 - 2:00</th>
+            <th>2:00 - 3:00</th>
+            <th>3:00 - 4:00</th>
+        </tr>
+
+        <tr>
+            <th>Monday</th>
+            <td rowspan="2">Mathematics</td>
+            <td>English</td>
+            <td rowspan="3">Physics</td>
+            <td class="break">Break</td>
+            <td colspan="2" class="lab">Computer Lab</td>
+            <td>Sports</td>
+        </tr>
+
+        <tr>
+            <th>Tuesday</th>
+            <td>C Programming</td>
+            <td class="break">Break</td>
+            <td colspan="2" class="lab">Electronics Lab</td>
+            <td>Library</td>
+        </tr>
+
+        <tr>
+            <th>Wednesday</th>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td class="break">Break</td>
+            <td colspan="3">
+                Computer Networks
+
+                <table class="nested">
+                    <caption>Lab Details</caption>
+                    <tr>
+                        <th>Batch A</th>
+                        <td>DBMS Lab</td>
+                    </tr>
+                    <tr>
+                        <th>Batch B</th>
+                        <td>OS Lab</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Thursday</th>
+            <td colspan="2">Workshop</td>
+            <td>Physics</td>
+            <td class="break">Break</td>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Seminar</td>
+        </tr>
+
+        <tr>
+            <th>Friday</th>
+            <td>Computer Networks</td>
+            <td>English</td>
+            <td>Physics</td>
+            <td class="break">Break</td>
+            <td colspan="3">Project Work</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
